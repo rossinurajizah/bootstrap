@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Inspirasi Hidup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+.hero {
+  background: linear-gradient(to right, #030d74, #2575fc); 
+  color: white; 
+  padding: 60px 20px; /* Jarak dalam dari atas, kanan, bawah, kiri */
+  border-radius: 20px; /* Membuat sudut melengkung */
+  text-align: center;
+  margin: 0 auto; /* Menjaga elemen tetap di tengah */
+  max-width: 90%; /* Batas lebar agar ada jarak kiri dan kanan */
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-md-6 {
+  width: 48%;
+  margin-bottom: 30px;
+}
+.hero-section {
+  padding: 0 20px;
+}
+
+
+.blog-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.blog-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+}
+
+.blog-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.blog-image {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.navbar-custom {
+  background-color: #043764 !important;
+}
+
+.btn-baca {
+  background: linear-gradient(45deg, #043764, #2575fc);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-baca:hover {
+  background: linear-gradient(45deg, #043764, #2575fc);
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Tambahkan ini di <head> jika belum -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <i class="bi bi-journal-richtext fs-4 me-2"></i> BlogKu
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+          </ul>
+          <form class="d-flex ms-3 align-items-center position-relative">
+            <input class="form-control ps-5 rounded-pill" type="search" placeholder="Cari artikel..." aria-label="Search" style="min-width: 200px;">
+            <i class="bi bi-search position-absolute text-muted" style="left: 15px;"></i>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Selamat Datang di Blog Inspirasi</h1>
+    <p class="lead mt-3">Temukan artikel menarik seputar pengembangan diri, teknologi, gaya hidup, dan banyak lagi. Kami menyajikan konten inspiratif untuk membuat harimu lebih bermakna.</p>
+  </div>
+</section>
+
+<!-- LIST ARTIKEL -->
+<div class="container py-5">
+    <h2 class="mb-5 text-center">Artikel Terbaru</h2>
+  
+    <div class="row">
+      <!-- Artikel 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="blog-card">
+          <img src="1.jpg" class="w-100 blog-image" alt="Kebiasaan Pagi">
+          <div class="blog-content">
+            <h2 class="blog-title">5 Kebiasaan Pagi yang Dilakukan Orang Sukses</h2>
+            <p class="text-muted">Diposting 30 April 2025 • Kategori: Pengembangan Diri</p>
+            <p class="mb-3">Pagi hari menentukan harimu. Yuk intip 5 kebiasaan pagi yang dilakukan oleh para tokoh sukses dunia!</p>
+            <div class="blog-bottom">
+              <p class="text-muted mb-0">Diposting 30 April 2025</p>
+              <a href="artikel.html" class="btn btn-sm btn-baca">Baca Selengkapnya <i class="bi bi-arrow-right-circle ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Artikel 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="blog-card">
+          <img src="2.jpg" class="w-100 blog-image" alt="Teknologi 2025">
+          <div class="blog-content">
+            <h2 class="blog-title">Teknologi Terbaru yang Booming di Tahun 2025</h2>
+            <p class="text-muted">Diposting 28 April 2025 • Kategori: Teknologi</p>
+            <p class="mb-3">Apa saja teknologi yang akan booming tahun ini? Mulai dari AI, kendaraan otonom, hingga dunia virtual!</p>
+            <div class="blog-bottom">
+              <p class="text-muted mb-0">Diposting 28 April 2025</p>
+              <a href="artikel2.html" class="btn btn-sm btn-baca">Baca Selengkapnya <i class="bi bi-arrow-right-circle ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Artikel 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="blog-card">
+          <img src="3.jpg" class="w-100 blog-image" alt="Menulis Artikel">
+          <div class="blog-content">
+            <h2 class="blog-title">Cara Menulis Artikel Blog yang Menarik</h2>
+            <p class="text-muted">Diposting 25 April 2025 • Kategori: Blogging</p>
+            <p class="mb-3">Ingin membuat tulisanmu banyak dibaca? Pelajari teknik menulis yang powerful dan bikin pembaca betah.</p>
+            <div class="blog-bottom">
+              <p class="text-muted mb-0">Diposting 25 April 2025</p>
+              <a href="artikel3.html" class="btn btn-sm btn-baca">Baca Selengkapnya <i class="bi bi-arrow-right-circle ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Artikel 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="blog-card">
+          <img src="4.jpg" class="w-100 blog-image" alt="Gaya Hidup Sehat">
+          <div class="blog-content">
+            <h2 class="blog-title">Tips Gaya Hidup Sehat di Tahun 2025</h2>
+            <p class="text-muted">Diposting 24 April 2025 • Kategori: Gaya Hidup</p>
+            <p class="mb-3">Menghadapi tahun 2025, penting untuk menjaga keseimbangan hidup. Yuk simak tips gaya hidup sehat untuk tubuh dan pikiran yang lebih baik!</p>
+            <div class="blog-bottom">
+              <p class="text-muted mb-0">Diposting 24 April 2025</p>
+              <a href="artikel4.html" class="btn btn-sm btn-baca">Baca Selengkapnya <i class="bi bi-arrow-right-circle ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Footer -->
+<footer style="background-color: #043764;" class="text-white pt-5 pb-4">
+  <div class="container text-md-left">
+    <div class="row text-md-left text-center">
+
+      <!-- Tentang -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Blog Inspirasi</h5>
+        <p>Kami berbagi artikel, cerita, dan wawasan yang menginspirasi dalam berbagai bidang kehidupan.</p>
+      </div>
+
+      <!-- Navigasi -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Navigasi</h5>
+        <p><a href="#" class="text-white text-decoration-none">Beranda</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Artikel</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Tentang Kami</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Kontak</a></p>
+      </div>
+
+      <!-- Kontak -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Kontak</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> Tasikmalaya, Indonesia</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@bloginspirasi.id</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +62 812 3456 7890</p>
+      </div>
+
+      <!-- Sosial Media -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Ikuti Kami</h5>
+        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+
+    <hr class="my-3 bg-light">
+
+    <div class="row text-center">
+      <div class="col-12">
+        <p class="mb-0">&copy; 2025 <strong>Blog Inspirasi</strong>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
